@@ -4,6 +4,29 @@ APP MAIN SCSS | Capstone App (Pursuit Volunteer Mgr)
 */
 
 
+/*  BOOTSTRAP REFERENCES
+
+    === MEDIA QUERY SIZING BREAKPOINTS ===========
+
+    DEFAULT                     {} : xs : EXTRA SMALL devices (portrait phones, less than 576px)
+    @media (min-width: 576px)   {} : sm : SMALL devices (landscape phones, 576px and up)
+    @media (min-width: 768px)   {} : md : MEDIUM devices (tablets, 768px and up)
+    @media (min-width: 992px)   {} : lg : LARGE devices (desktops, 992px and up)
+    @media (min-width: 1200px)  {} : xl : EXTRA large devices (large desktops, 1200px and up)
+    *** any references using MAX-WIDTH: should target 1px down the above sizes (575px, 767px, 991px, 1199px, respectively)
+
+    === Z-INDICES USED ===========
+
+    $zindex-dropdown:          1000 !default;
+    $zindex-sticky:            1020 !default;
+    $zindex-fixed:             1030 !default;
+    $zindex-modal-backdrop:    1040 !default;
+    $zindex-modal:             1050 !default;
+    $zindex-popover:           1060 !default;
+    $zindex-tooltip:           1070 !default;
+*/
+
+
 /* BASE & VARIABLES */
 *,
 *::after,
@@ -60,13 +83,7 @@ html, body, #root, .g1App {
     --zi-carousel-arrows: 100;
 }
 
-    // MEDIA QUERY SIZING REFERENCE
-    // Bootstrap reference
-    // DEFAULT {} : xs : EXTRA SMALL devices (portrait phones, less than 576px)
-    // @media (min-width: 576px) {} : sm : SMALL devices (landscape phones, 576px and up)
-    // @media (min-width: 768px) {} : md : MEDIUM devices (tablets, 768px and up)
-    // @media (min-width: 992px) {} : lg : LARGE devices (desktops, 992px and up)
-    // @media (min-width: 1200px) {} : xl : EXTRA large devices (large desktops, 1200px and up)
+
 
 
 /* BASE ELEMENT STYLING */
@@ -1205,20 +1222,3 @@ div.card-text {
 //     background-color: var(--color-yellow);
 //     filter: grayscale(.4) brightness(1.4);
 // }
-
-
-@media (max-width: 991px) {
-    .g1MobileTextAlign {
-        width: 100%;
-        text-align: left;   // MASTER TEXT-ALIGN for small device nav dropdown
-    }
-}
-
-
-// MEDIA QUERY MORE SPECIFIC STYLING
-    // Bootstrap reference
-    // DEFAULT {} : xs : EXTRA SMALL devices (portrait phones, less than 576px)
-    // @media (min-width: 576px) {} : sm : SMALL devices (landscape phones, 576px and up)
-    // @media (min-width: 768px) {} : md : MEDIUM devices (tablets, 768px and up)
-    // @media (min-width: 992px) {} : lg : LARGE devices (desktops, 992px and up)
-    // @media (min-width: 1200px) {} : xl : EXTRA large devices (large desktops, 1200px and up)
